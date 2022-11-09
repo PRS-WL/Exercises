@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator | JS | PRS-GH</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/faviocn.png"
+      type="image/x-icon"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" class="show"></input>
+      <div class="operate-num">
+        <div class="first-r">
+          <div onclick="addMe(this)">7</div>
+          <div onclick="addMe(this)">8</div>
+          <div onclick="addMe(this)">9</div>
+          <div onclick="addMe(this)" style="background-color: rgb(94, 94, 94); margin-left: 10px;" class="hover">(</div>
+          <div onclick="addMe(this)" style="background-color: rgb(94, 94, 94); " >)</div>
+        </div>
+        <div class="second-r">
+          <div onclick="addMe(this)">4</div>
+          <div onclick="addMe(this)">5</div>
+          <div onclick="addMe(this)">6</div>
+          <div onclick="addMe(this)" style="background-color: rgb(94, 94, 94); margin-left: 10px;" class="hover">*</div>
+          <div onclick="addMe(this)" style="background-color: rgb(94, 94, 94);" >/</div>
+        </div>
+        <div class="third-r">
+          <div onclick="addMe(this)">1</div>
+          <div onclick="addMe(this)">2</div>
+          <div onclick="addMe(this)">3</div>
+          <div onclick="addMe(this)" style="background-color: rgb(94, 94, 94); margin-left: 10px;" class="hover">+</div>
+          <div onclick="addMe(this)" style="background-color: rgb(94, 94, 94); " >-</div>
+        </div>
+        <div class="forth-r">
+          <div onclick="addMe(this)">0</div>
+          <div onclick="addMe(this)">00</div>
+          <div onclick="addMe(this)">.</div>
+          <div onclick="clearMe()" style="background-color: rgb(94, 94, 94); margin-left: 10px;" class="hover">C</div>
+          <div onclick="equal()" style="background-color: rgb(94, 94, 94);" id="equal">=</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
