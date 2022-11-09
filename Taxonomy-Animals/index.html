@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Taxonomy-Animals | JS | PRS-GH</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body></body>
+  <script>
+    class Animal {
+      name = "Animal";
+      move() {}
+      reproduction() {}
+      nut() {}
+    }
+    class Mammal extends Animal {
+      move() {
+        return "Walks";
+      }
+      reproduction() {
+        return "Doesn't Lay Eggs";
+      }
+      nut() {
+        return "Vertebrate";
+      }
+    }
+
+    class Birdlike extends Animal {
+      move() {
+        return "Flys";
+      }
+      reproduction() {
+        return "Lays Eggs";
+      }
+      nut() {
+        return "Vertebrate";
+      }
+    }
+
+    class Fishlike extends Animal {
+      move() {
+        return "Swims";
+      }
+      reproduction() {
+        return "lays eggs";
+      }
+      nut() {
+        return "Vertebrate";
+      }
+    }
+
+    class ostrich extends Birdlike {
+      move() {
+        return "Walks";
+      }
+    }
+
+    class lion extends Mammal {
+      move() {
+        return "Cat Walks";
+      }
+    }
+
+    class shark extends Fishlike {}
+
+    o = new ostrich();
+    l = new lion();
+    s = new shark();
+
+    with (console) {
+      log(
+        "Ostrich: " +
+          Birdlike.name +
+          " / " +
+          o.move() +
+          " / " +
+          o.reproduction() +
+          " / " +
+          o.nut()
+      );
+      log("");
+      log(
+        "Lion: " +
+          Mammal.name +
+          " / " +
+          l.move() +
+          " / " +
+          l.reproduction() +
+          " / " +
+          l.nut()
+      );
+      log("");
+      log(
+        "Shark: " +
+          Fishlike.name +
+          " / " +
+          s.move() +
+          " / " +
+          s.reproduction() +
+          " / " +
+          s.nut()
+      );
+    }
+  </script>
+</html>
